@@ -1,0 +1,27 @@
+#lw {
+  
+  background: red;
+  border: 5px solid green;
+  
+}
+
+#lw2 {
+  
+  background: blue;
+  border: 5px solid green;
+  
+}
+
+
+#container{
+  
+  border: 2px solid black;
+}
+
+
+#container{
+  
+  width: 450px;
+  height: 450px;
+  
+}

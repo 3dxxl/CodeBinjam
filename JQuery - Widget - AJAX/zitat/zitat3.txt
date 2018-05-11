@@ -1,0 +1,4 @@
+<div id="tabs-3">
+<p>Das Paradies pflegt sich erst dann als Paradies zu erkennen zu geben, wenn wir daraus vertrieben 
+wurden.</p>
+</div>

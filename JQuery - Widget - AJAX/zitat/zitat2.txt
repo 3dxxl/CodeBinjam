@@ -1,0 +1,3 @@
+<div id="tabs-2">
+<p>Wer hohe Türme bauen will, muss lange beim Fundament verweilen.</p>
+</div>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html class="no-js" lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>WebVR</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+               <!--A-Frame Bibliothek-->
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+        <script type="text/javascript" src="js/vendor/bin.js"></script>
+
+
+
+
+
+
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+        
+
+        <!--Hier habe ich den VR Mode raus genommen-->
+        <a-scene vr-mode-ui="enabled: false">
+
+        <a-assets>
+        <!--Erst muss man den Text einbinden in den assets-->
+        <a-mixin id="text"
+          text="align: center; width: 6; color:green;
+               value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam"
+        ></a-mixin>
+      </a-assets>
+
+      <!--Hier wird das Text Element eingebunden im 3D Raum-->
+
+       <a-text mixin="text" position="3 3.5 0" wrap-count="50"></a-text>
+
+         <!--Muss auch eingefügt werden, damit der Text im Raum ist-->
+        <a-entity position="0 .6 4">
+            
+            <a-camera>
+
+             <a-cursor></a-cursor>
+
+
+       <!--Feste objekte am Bildschirmrand fuer Desktop-->
+            <a-entity
+            geometry="primitive: plane; 
+            height: 2; width: 4" 
+            material="color:gray;"
+            position="30 -15 -20"
+            text="text: HELLO" 
+            material="color:red">
+            </a-entity>
+    
+               
+
+                 </a-camera>
+
+        <!--Das SkyBox Image für die Umgebung-->
+    
+        <a-sky src="img/screen1.jpg"></a-sky>
+
+
+         <a-text value="Now Interactable" geometry="primitive:plane; height: 4; width: 8"></a-text>
+
+        
+        
+
+
+
+
+
+        
+            
+           
+
+       
+
+
+        </a-scene>
+
+
+        
+        
+
+        
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+ 
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
