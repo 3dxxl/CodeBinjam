@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="de">
+		
+	<head>
+	<meta charset="utf-8">
+	<title>Formular mit PHP Anbindung</title>
+	
+
+	</head>
+
+	<body>
+
+	
+
+	<p>Bitte wählen Sie eine Speise und ein Getränk.<br>
+	   Senden Sie das Formular dann bitte ab.	
+	</p>
+
+	<!--Wichtig localhost muss auch bei der html seite
+	im Browser stehen!!-->
+
+	<form action="formular-antwort.php" method="post"> 
+
+	<p>
+		<select name="essen">
+			<option value="Fisch">Einen leckeren Fisch</option>
+
+			<option value="Burger">Einen leckeren Burger</option>
+
+			<option value="Salat">Einen leckeren Salat</option>
+
+		</select>Speisen
+	</p>
+
+	<p>
+		<select name="trinken">
+			<option value="Cola">Eine leckere Cola</option>
+
+			<option value="Fanta">Einen leckere Fanta</option>
+
+			<option value="Sprite">Einen leckere Sprite</option>
+
+		</select>Getränke
+	</p>
+		
+	<p>
+		<input type="submit" name="senden" value="SENDEN">
+		<input type="reset" name="reset" value="ZURÜCKSENDEN">
+
+	</p>
+
+	</form>
+		
+	</body>
+
+</html>
